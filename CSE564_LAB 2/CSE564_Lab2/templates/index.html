@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+  /* set the CSS */
+  body {
+    font: 12px Arial;
+  }
+
+  path {
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+  }
+  
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+  }
+</style>
+
+<head>
+  <script src="http://d3js.org/d3.v4.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='index.js') }}"></script>
+</head>
+
+<body>
+  <h1 align="center">NBA Data Analysis<h1>
+      <div id="option">
+        <button class="button" id="btnScree" onclick='updateGraph("scree")'>PCA Scree Plot</button>
+        <button class="button" id="btnScatter" onclick='updateGraph("scatter")'>Scatter Plot</button>
+        <button class="button" id="btnScatterMatrix" onclick='updateGraph("scatterMatrix")'>Scatter Plot Matrix</button>
+      </div>
+
+      {{ data | safe }}
+      <div id="svgDivLeft">
+        <h3>PCA</h3>
+      </div>
+      <div id="svgDivRight">
+          <h3>MDS</h3>
+      </div>
+</body>
+
+</html>

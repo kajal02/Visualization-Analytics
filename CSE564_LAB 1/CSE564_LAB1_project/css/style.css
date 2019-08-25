@@ -1,0 +1,127 @@
+body {
+  background-color: #eec4b4;
+   background-repeat:no-repeat;
+   background-size:cover;
+}
+
+.myclass {
+  color: steelblue
+}
+
+.error {
+  color: blue
+}
+
+.dropbtn {
+  background-color: #AA3311;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  float: left;
+  margin-top: 1%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 26%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #AA3311;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s
+
+  float: left;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #AA3311;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #AA3311;
+  cursor: pointer;
+}
+
+.heading {
+  float: right;
+  width: 30%;
+  font-size: 50px;
+  margin-top: -4%;
+  color: #AA3311;
+}
+
+.BasketballImg {
+  float: right;
+  width: 25%;
+  margin-top: -20%;
+}
+
+#svgDiv {
+  margin-top: 1%;
+  margin-left: 3%;
+}
+
+#mainSlider{
+  width: 100%;
+  margin-top: 3%;
+}
+
+#sliderHeading {
+  float: left;
+  width: 15%;
+  margin-top: -1%;
+}
